@@ -50,7 +50,7 @@ header {
     margin-left: 15px;
 }
 
-
+/* Dropdown Content */
 .dropdown-content {
     display: none;
     overflow: hidden;
@@ -60,28 +60,62 @@ header {
 
 .dropdown-content.show {
     display: block;
-    max-height: 1000px; 
+    max-height: 1000px;
 }
 
+/* Logo Styling */
+.restaurant-logo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
 
+/* Responsive for Tablet Screens */
 @media (max-width: 768px) {
     .menu-container {
         width: 95%;
         padding: 20px;
     }
-
+    .restaurant-logo {
+        width: 180px;  
+    }
     .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;  /* Keep items in a row */
+        justify-content: space-between;
+        align-items: center;
     }
-
     .menu-img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
     }
-
     .section-title {
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
+}
+
+/* Responsive for Mobile Screens */
+@media (max-width: 480px) {
+    .menu-container {
+        width: 95%;
+        padding: 15px;
+    }
+    .restaurant-logo {
+        width: 150px;  
+    }
+    .menu-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-img {
+        width: 55px;  /* Keep images small */
+        height: 55px;
+        margin-left: 10px;
+    }
+    .section-title {
+        font-size: 1.1em;
+        padding: 12px;
     }
 }
