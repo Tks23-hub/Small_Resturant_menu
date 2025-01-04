@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>قائمة الطعام</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleDropdown(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.classList.toggle('show');
+        }
+    </script>
 </head>
 <body>
 
@@ -14,7 +20,10 @@
         </header>
 
         <section class="menu-section">
-            <h2 class="section-title">الأسماك</h2>
+            <div class="section-title" onclick="toggleDropdown('fish')">
+                <h2>🐟 الأسماك</h2>
+            </div>
+            <div class="dropdown-content" id="fish">
             <div class="menu-item">
                 <img src="./images/fish_images/دينيس مقلي.jpg" class="menu-img" alt="دينيس مشوي">
                 <p>دينيس مقلي / مشوي</p>
@@ -63,7 +72,10 @@
         </section>
 
         <section class="menu-section">
-            <h2 class="section-title">لحوم</h2>
+            <div class="section-title" onclick="toggleDropdown('meat')">
+                <h2>🥩 اللحوم</h2>
+            </div>
+            <div class="dropdown-content" id="meat">
             <div class="menu-item">
                 <img src="./images/meat/اضلاع خروف.jpg" class="menu-img" alt="أضلاع خروف">
                 <p>أضلاع خروف</p>
@@ -112,7 +124,10 @@
         </section>
 
         <section class="menu-section">
-            <h2 class="section-title">وجبات أطفال</h2>
+            <div class="section-title" onclick="toggleDropdown('kids')">
+                <h2>🍔 وجبات الأطفال</h2>
+            </div>
+            <div class="dropdown-content" id="kids">
             <div class="menu-item">
                 <img src="./images/kids meal/شنيتسل.jpg" class="menu-img" alt="شنينتسل">
                 <p>شنينتسل</p>
@@ -131,7 +146,10 @@
         </section>
 
         <section class="menu-section">
-            <h2 class="section-title">مشروبات</h2>
+            <div class="section-title" onclick="toggleDropdown('drinks')">
+                <h2>🥤 المشروبات</h2>
+            </div>
+            <div class="dropdown-content" id="drinks">
             <div class="menu-item">
                 <img src="./images/drinks/ليمونادا.jpg" class="menu-img" alt="ليمونادة">
                 <p>ليمونادة</p>

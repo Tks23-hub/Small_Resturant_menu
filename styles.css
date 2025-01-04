@@ -23,10 +23,15 @@ header {
 .section-title {
     background-color: #ffa500;
     color: black;
-    display: inline-block;
-    padding: 8px 25px;
+    padding: 15px;
     border-radius: 25px;
-    margin: 30px 0;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.section-title:hover {
+    background-color: #ff8500;
 }
 
 .menu-item {
@@ -38,14 +43,45 @@ header {
 }
 
 .menu-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     margin-left: 15px;
 }
 
-footer {
-    margin-top: 40px;
-    font-size: 1.1em;
+
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.dropdown-content.show {
+    display: block;
+    max-height: 1000px; 
+}
+
+
+@media (max-width: 768px) {
+    .menu-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+    }
 }
