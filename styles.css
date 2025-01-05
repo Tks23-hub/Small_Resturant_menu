@@ -60,7 +60,7 @@ header {
 
 .dropdown-content.show {
     display: block;
-    max-height: 1000px;
+    max-height: none;
 }
 
 /* Logo Styling */
