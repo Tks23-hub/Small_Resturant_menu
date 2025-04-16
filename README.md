@@ -43,6 +43,14 @@ Each folder under `images/` contains high-quality photos related to its section 
 
 ---
 
+## 🔗 QR Code
+
+Scan this to open the menu directly:
+
+![QR Code](images/updated_QR_code.jpg)
+
+---
+
 ## 🙌 Acknowledgments
 
 This project was made for a real restaurant client and is my **first deployed website** connected to GitHub and Rendier.
@@ -58,5 +66,3 @@ If you have any questions or want a similar menu for your business, feel free to
 - **Name**: Mohamed soliman
 - **GitHub**: [https://github.com/Tks23-hub]
 - **Email**: [mohamedhosen69@gmail.com]
-
-
